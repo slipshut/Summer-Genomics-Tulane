@@ -1,5 +1,3 @@
-##Notes May 18th Meeting
-
 ##Dependencies
 
 -For context, I am running OS X El Capitan 10.11.14 on a MacBook Pro. Everything is running in bash on the OSX terminal. 
