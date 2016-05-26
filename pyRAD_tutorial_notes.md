@@ -1,8 +1,12 @@
 ##Dependencies
 
--For context, I am running OS X El Capitan 10.11.14 on a MacBook Pro. Everything is running in bash on the OSX terminal. 
+*For context, I am running OS X El Capitan 10.11.14 on a MacBook Pro. Everything is running in bash on the OSX terminal. 
 
--run pip to install anything python related. Everything else related to pyRAD, including pyRAD, was downloaded from their respective git repositories. 
+*Install or update pip and brew. Make sure you are running the latest python. Updating is important!
+
+*run pip to install anything python related. Everything else related to pyRAD, including pyRAD, was downloaded from their respective git repositories. 
+
+http://dereneaton.com/software/pyrad/
 
 ```bash
 pip install scipy 
@@ -13,30 +17,30 @@ pip install numpy
 
 ```bash
 brew install homebrew/science/muscle
-brew install homebrew/science/vsearch
+brew install homebrew/science/vsearch #Don't actually do this, its better to follow my directions below
 ```
 
--Following the vsearch website, I downloaded the binary of vsearch for osx using these commands.
+-To get the latest version of vsearch, follow the vsearch website directions
+https://github.com/torognes/vsearch
 
+-I downloaded the binary of vsearch for osx using these commands.
 ```bash
 wget https://github.com/torognes/vsearch/releases/download/v1.11.1/vsearch-1.11.1-linux-x86_64.tar.gz
 tar xzf vsearch-1.11.1-linux-x86_64.tar.gz
 ```
 
--Following massive headaches and exploration and many dead ends trying to get this version in my path, here was my solution for running vsearch: Put the whole vsearch folder in my home folder - then linked to this in the params file later (it would not work anywhere but my home folder!!!) - so line four in the params file looks like this for me:
-```
-~/vsearch-1.11.1-osx-x86_64/bin/vsearch ##4. full path
-```
-
--**UPDATE** I was able to call it from anywhere by setting a path to this home folder. Maybe my original issue was involved with spaces and backslashes associated with google drive?
+-Ideally you can call vsearch from anywhere by setting a path to the folder where you put vsearch (you need to link to the bin folder specifically)
 
 ```
 export PATH=~/vsearch-1.11.1-osx-x86_64/bin/:$PATH
 ```
 
+-I initially had issues putting vsearch in my path (for me, it was because one of my folders had a space in it). Following massive headaches and exploration and many dead ends trying to get this version in my path, here was my solution for running vsearch: Put the whole vsearch folder in my home folder - then linked to this in the params.txt file later (it would not work anywhere but my home folder!!!) - so line four in the params.txt file looks like this for me:
+```
+~/vsearch-1.11.1-osx-x86_64/bin/vsearch ##4. full path
+```
 
 
--had to update pip and brew and all these things. I also had to update python
 
 -Graham did a bunch of things that were quite confusing to get my pyRAD.py into my python path.End of the day put the following two things in my bash profile. Edit .bashrc for a profile that you have to source every time you open the terminal. 
 
