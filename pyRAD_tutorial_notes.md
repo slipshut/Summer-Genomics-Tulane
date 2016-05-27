@@ -131,7 +131,7 @@ Each sequence identifier, the line that precedes the sequence and describes it, 
 
 Keep in mind running on unix on my mac I have to run pyRAD as pyRAD.py. 
 
-This was pretty cookie cutter with no problems through step 7. Example below
+This was pretty cookie cutter with no problems through step 7. If you have problems make sure that pyRAD is runnign correctly (e.g. do you get an error when you type pyRAD.py and enter?). To troubleshoot, you should make sure you can run pyRAD.py, vsearch, and muscle and that all the python dependencies are correctly installed. Example below.
 
 ```bash
 pyRAD.py -p params.txt -s 3
