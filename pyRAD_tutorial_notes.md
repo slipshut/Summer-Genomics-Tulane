@@ -64,9 +64,11 @@ source .bash_profile
 env
 ```
 
-###pyRAD RAD tutorial
+###pyRAD RAD tutorial 
 
-####Running Step 1
+####Setting up for running Step 1
+
+http://nbviewer.jupyter.org/gist/dereneaton/1f661bfb205b644086cc/tutorial_RAD_3.0.ipynb
 
 I'll work through this tutorial and only make notes where I had issues beyond what was obviously stated already.
 
@@ -125,13 +127,11 @@ Each sequence identifier, the line that precedes the sequence and describes it, 
 * ``<is filtered> Y or N Y if the read is filtered, N otherwise``
 * ``<control number> Numerical 0 when none of the control bits are on, otherwise it is an eve``
 
+##Steps 1-7
 
--For line 9, I hit errors while running pyRAD. It turns out it was because my working folder was Goolge Drive and has a space in it. I've since edited it to be Google_Drive, but alternatively you could run this out of your home folder. No issues running step 1.
+Keep in mind running on unix on my mac I have to run pyRAD as pyRAD.py. 
 
-##Steps 2-7
-
--keep in mind running on unix on my mac I have to run pyRAD as pyRAD.py. 
--This was pretty cookie cutter with no problems through step 7
+This was pretty cookie cutter with no problems through step 7. Example below
 
 ```bash
 pyRAD.py -p params.txt -s 3
