@@ -28,8 +28,8 @@ unzip simRADs.zip
 scp ./simRADs/ eenbody@cypress1.tulane.edu:/home/eenbody
 ```
 
-*Either log into cypress or return to the window where you had cypress open. 
-*Navigate into the simRADs directory. 
+* Either log into cypress or return to the window where you had cypress open. 
+* Navigate into the simRADs directory. 
 * Create a new job ticket file
 
 ```bash
