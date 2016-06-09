@@ -82,6 +82,7 @@ module load pyrad
 pyrad -p params.txt -s 1
 ```
 
+*To copy the Jacana files to your. I'll update this later. password is last night of your PI
 
 
 
