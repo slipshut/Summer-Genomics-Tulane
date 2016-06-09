@@ -42,7 +42,6 @@ nano pyrad_n.srun
 
 #!/bin/bash
 #SBATCH --job-name=OneHourJob ### Job Name
-#SBATCH --time=0-00:01:00     ### Wall clock time limit in Days-HH:MM:SS
 #SBATCH --nodes=1             ### Node count required for the job
 #SBATCH --ntasks-per-node=1   ### Nuber of tasks to be launched per Node
 
@@ -75,7 +74,6 @@ sed -i '/## 30./c\*                   ## 30. all output formats... ' params.txt
 ```bash
 #!/bin/bash
 #SBATCH --job-name=OneHourJob ### Job Name
-#SBATCH --time=0-00:01:00     ### Wall clock time limit in Days-HH:MM:SS
 #SBATCH --nodes=1             ### Node count required for the job
 #SBATCH --ntasks-per-node=1   ### Nuber of tasks to be launched per Node
 
