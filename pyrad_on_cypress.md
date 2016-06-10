@@ -88,16 +88,17 @@ We are going to use pyRAD to call SNPs on Sara L's dataset from her work with ja
 
 * First, you will need to copy the raw data to your lab's project folder. Only one member per lab should do this. You will also need to physically go to the derryberry lab to initiate this transfer. I will send instructions by email about the password.
 
-* Once you are at the computer, open terminal and login to cypress. You want to find your way to the lustre project folder for your lab. For example for the karubian lab see below. You should only have permission to access your workgroup's folder.
+* Once you are at the computer, open terminal and login to cypress. You want to find your way to the lustre project folder for your lab and make a directory for jacanas. For example for the karubian lab see below. You should only have permission to access your workgroup's folder.
 
 ```bash
 cd /lustre/project/jk
+mkdir Jacana_Raw_Reads
 ```
 
 * Now that we are here, lets transfer those files. They are large files and total ~60gb, so using the "scp" command is a bit unwieldy as it was built for smaller files. Instead we will use bcbp
 
 ```bash
-bbcp -zv -r /Volumes/LaCie/Jacana GBS Raw Reads" Jacana_Raw_Reads/
+bbcp -zv -r "/Volumes/LaCie/Jacana GBS Raw Reads" Jacana_Raw_Reads/
 ```
 
 -v stands for verbose 
